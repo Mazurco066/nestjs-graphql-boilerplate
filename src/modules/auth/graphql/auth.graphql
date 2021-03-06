@@ -1,0 +1,12 @@
+type UserToken {
+  token: String
+}
+
+input AuthenticateDTO {
+  email: String
+  password: String
+}
+
+type Mutation {
+  authenticate(login: AuthenticateDTO): UserToken
+}
